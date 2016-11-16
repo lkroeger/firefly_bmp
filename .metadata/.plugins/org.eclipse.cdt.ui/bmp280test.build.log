@@ -1,0 +1,20 @@
+
+**** Build of configuration Debug for project bmp280test ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: bmp280test.cpp'
+'Invoking: GNU Compiler'
+"C:/school 2016/energia-0101E0017/hardware/tools/msp430/bin/msp430-gcc.exe" -c -mmcu=msp430f5529 -DF_CPU=25000000L -DARDUINO=101 -DENERGIA=13 -I"C:/school 2016/energia-0101E0017/hardware/msp430/cores/msp430" -I"C:/school 2016/energia-0101E0017/hardware/msp430/variants/launchpad_f5529" -I"C:/school 2016/energia-0101E0017/hardware/tools/msp430/msp430/include" -I"C:/School Junior Year/schmalzel/Firefly_BMP/bmp280test" -I"C:/school 2016/energia-0101E0017/hardware/msp430/libraries/SPI" -Os -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"bmp280test.d" -MT"bmp280test.d" -o"bmp280test.o"  "bmp280test.cpp"
+'Finished building: bmp280test.cpp'
+' '
+'Building target: bmp280test.out'
+'Invoking: GNU Linker'
+"C:/school 2016/energia-0101E0017/hardware/tools/msp430/bin/msp430-gcc.exe" -mmcu=msp430f5529 -DF_CPU=25000000L -DARDUINO=101 -DENERGIA=13 -Os -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Wl,--gc-sections -L"C:/School Junior Year/schmalzel/Firefly_BMP/lpmsp430f5529_25_core/Debug" -L"C:/School Junior Year/schmalzel/Firefly_BMP/lpmsp430f5529_25_SPI/Debug" -Wl,--undefined,main -o"bmp280test.out" "./Adafruit_BMP280.o" "./bmp280test.o"  -Wl,--start-group -l"lpmsp430f5529_25_SPI" -l"lpmsp430f5529_25_core" -l"m" -l"c" -Wl,--end-group 
+'Finished building target: bmp280test.out'
+' '
+'Invoking: GNU Objcopy Utility'
+"C:/school 2016/energia-0101E0017/hardware/tools/msp430/bin/msp430-objcopy.exe" -O ihex --remove-section .eeprom  "bmp280test.out"  "bmp280test.hex"
+'Finished building: bmp280test.hex'
+' '
+
+**** Build Finished ****
